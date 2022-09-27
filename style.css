@@ -109,7 +109,7 @@ body{
 /**********************
 *         Body        *
 **********************/
-#body{
+.projectBody{
     padding: 25px;
     background-image: url("img/bg_img.jpg");
     background-position: center;
