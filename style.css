@@ -12,7 +12,7 @@ body{
     font-size: 3rem;
 }
 #title{
-    width:500px;
+    width:400px;
     color:white;
     font-size: 50px;
     font-weight: bold;
@@ -60,7 +60,7 @@ body{
 
 
 .divider{
-    width: 80%;
+    width: 100%;
     margin: auto;
 }
 
@@ -131,12 +131,7 @@ body{
     margin: 17.5px;
     padding: 15px;
 }
-.card-group{
-    padding: 20px;
-}
-.card{
-    background-color: chocolate;
-}
+
 
 
 
@@ -157,20 +152,21 @@ body{
     height:2.5rem;
 }
 
-#submit-button{
+.submit{
     border-radius: 0;
-    height: 1.5rem;
-    width: 25%;
+    width: 20%;
+    padding: 5px;
+    min-width: 120px;
     font-size: 1rem;
     font-weight:600;
     background-color: rgba(83, 153, 50, 0.3);
 }
-#submit-button:hover{
+.submit:hover{
     background-color: rgba(83, 153, 50);
 }
 
 /*==============Responsive Layout==========*/
-@media only screen and (min-width:550px){
+@media only screen and (min-width:300px){
     /* ================== Profile Card ==================*/
     .profile_card{
         width: 450px;
