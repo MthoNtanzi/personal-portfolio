@@ -5,12 +5,24 @@ html{
     margin: 0;
     padding: 0;
     width: 100%;
+    height: 100%;
 }
-body{
-    margin:0;
-    min-height: 100vh;
+body{   
     font-size: 3rem;
+    background-image: url("img/bg_img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    backdrop-filter: blur(5px);
+    
+    
 }
+main{
+    position: relative;
+    min-height: 100vh;
+}
+
 #title{
     width:400px;
     color:white;
@@ -36,21 +48,20 @@ body{
     -webkit-filter: blur(2px);
 }
 
-#menu{
+.menu{
     height: 60px;
     margin: 0;
     background-color:#46835f;
     padding-top: 10px;
-    padding-bottom: 10px;
-    
+    padding-bottom: 10px;   
 }
-#menu a{
+.menu a{
     text-decoration: none;
     color: aliceblue;
     font-size: 25px;
     font-weight: 500;
 }
-#menu li{
+.menu li{
     list-style-type: none;
     float:right;
     display: block;
@@ -64,14 +75,15 @@ body{
     margin: auto;
 }
 
-#footer{
+footer{
     height: 100px;
+    width: 100%;
     padding: 40px;
     text-align: center;
     background-color: #212224;
-    margin-bottom: 0;
-    clear:both;
     color:white;
+    position: fixed;
+    bottom: 0;
 }
 
 /**********************
@@ -96,32 +108,15 @@ body{
 .social_links{
     padding: 10px 15px;
 }
-.social-bar{
-    /* width: 50%;
-    margin: auto 20px; */
+.social_links a{
     font-size: 1.5rem;
+    padding: 1rem;
+    color: #000;
 }
 
-.social-bar li{
-    list-style-type: none;
-    display: block;
-    float: left;
-    margin: 0;
+.body-text{
+    font-size: 1.2rem;
 }
-
-/**********************
-*         Body        *
-**********************/
-#body{
-    padding: 25px;
-    background-image: url("img/bg_img.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    backdrop-filter: blur(5px);
-}
-
 /**********************
 *   Projects Page     *
 **********************/
@@ -165,140 +160,15 @@ body{
     background-color: rgba(83, 153, 50);
 }
 
-/*==============Responsive Layout==========*/
-@media only screen and (min-width:300px){
-    /* ================== Profile Card ==================*/
+/* ================ Responsive Layout ================ */
+@media only screen and (max-width: 800px)  {
     .profile_card{
-        width: 450px;
-        margin: 60px auto;
-        padding: 8px;
         position: relative;
-        left: 0;
+        left: 0px;
         border: 3px double white;
         text-align: center;
     }
-    
-    .profile_card img{
-        width: 400px;
-        padding: 15px;
-        border-radius: 100%;
-        margin:auto;
-    }
-    /* ================== Body ==================*/
-    #body{
-        height: 100%;
-        padding: 30px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        backdrop-filter: blur(5px);
-    }
-    #light-text{
-        padding: 60px 40px 20px 40px;
-        margin: 21.5px 10px;
-        text-align: center;
-    }
-}
-
-@media only screen and (min-width:800px){
-    /* ================== Profile Card ==================*/
-    .profile_card{
-        width: 550px;
-        margin: 60px auto;
-        padding: 8px;
-        position: relative;
-        left: 0;
-        border: 3px double white;
-        text-align: center;
-    }
-    
-    .profile_card img{
-        width: 450px;
-        padding: 15px;
-        border-radius: 100%;
-        margin:auto;
-    }
-    /* ================== Socials ==================*/
-    .social_links{
-        padding: 10px 5px;
-    }
-    .social-bar{
-        width: 50%;
-        margin: auto 25%;
-        padding: 0;
-    }
-    .social-bar li{
-        list-style-type: none;
-        display: block;
-        float: left;
-        padding: 0;
-        margin: -10px 30px 5px 30px
-    }
-    /* ================== Body ==================*/
-    #body{
-        height: 100%;
-        padding: 30px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        /*background-attachment: fixed;*/
-        backdrop-filter: blur(5px);
-    }
-    #light-text{
-        padding: 60px 40px 20px 40px;
-        margin: 21.5px 10px;
-        text-align: center;
-    }
-}
-
-@media only screen and (min-width:1000px){
-    /* ================== Profile Card ==================*/
-    .profile_card{
-        width: 450px;
-        margin: 10px auto;
-        padding: 8px;
-        position: relative;
-        left: -150px;
-        border: 3px double white;
-        text-align: center;
-    }
-    
-    .profile_card img{
-        width: 400px;
-        padding: 15px;
-        border-radius: 100%;
-        margin:auto;
-    }
-    /* ================== Socials ==================*/
-    .social_links{
-        padding: 10px 5px;
-    }
-    .social-bar{
-        width: 50%;
-        margin: auto 25%;
-        padding: 0;
-    }
-    .social-bar li{
-        list-style-type: none;
-        display: block;
-        float: left;
-        padding: 0;
-        margin: -10px 20px 5px 20px
-    }
-    /* ================== Body ==================*/
-    #body{
-        height: 100%;
-        padding: 30px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        backdrop-filter: blur(5px);
-    }
-    #light-text{
-        padding: 60px 40px 20px 40px;
-        margin: 21.5px 10px;
-        text-align: center;
+    main{
+        min-height: 120vh;
     }
 }
