@@ -16,6 +16,9 @@ body{
     background-attachment: fixed;
     backdrop-filter: blur(5px);
 
+
+    
+    
     
     min-height: 100vh;
 }
@@ -43,6 +46,7 @@ body{
     left:50%;
     transform: translate(-50%,0);
     z-index: 5;
+    width: 350px;
 }
 
 nav{
@@ -69,13 +73,14 @@ nav li{
 }
 
 main{
-    padding: 1.3rem;
+    padding: 1rem;
     
 }
 
 
 .page-heading{
     font-size: 1.8rem;
+    margin-bottom: 16px;
 }
 
 footer{
@@ -93,16 +98,81 @@ footer{
 *     Index Page      *
 **********************/
 .profile_card{
-    width: 20rem;
+    width: 400px;
     margin: 10px auto;
     padding: 8px;
     border: 3px double white;
     text-align: center;
+    background-color: rgba(128, 128, 128, 0.3);
 }
 
 #profile-img{
-    width: 400px;
+    width: 375px;
     padding: 15px;
     border-radius: 100%;
     margin:auto;
+}
+
+/**********************
+*   Projects Page     *
+**********************/
+.projectArea{
+    display: flex;
+    flex-direction: column;
+}
+
+.project-cards{
+    border: 2px white solid;
+    margin: 17.5px;
+    padding: 15px;
+    background-color: rgba(128, 128, 128, 0.3);
+}
+
+.card-title{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid white;
+}
+
+.card-para{
+    padding: 15px 0 10px 0;
+    color: #2e2727;
+}
+
+
+
+.submit{
+    border-radius: 0;
+    width: 200px;
+    margin-top: 10px;
+    padding: 5px;
+    min-width: 120px;
+    font-size: 1rem;
+    font-weight:600;
+    background-color: rgba(83, 153, 50, 0.3);
+    transition: 400ms ease;
+}
+.submit:hover{
+    background-color: rgb(100, 177, 65);
+    color: #fff;
+}
+
+/**********************
+*   Contact Page     *
+**********************/
+
+.contact-form{
+    border: 3px white double;
+    padding: 10px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.contact-form input{
+    border-radius: 0;
+    background-color: rgba(83, 153, 50, 0.3);
+    margin: 0.2rem ;
+    height:2rem;
 }
