@@ -16,10 +16,6 @@ body{
     background-attachment: fixed;
     backdrop-filter: blur(5px);
 
-
-    
-    
-    
     min-height: 100vh;
 }
 
@@ -54,7 +50,10 @@ nav{
     margin: 0;
     background-color:#46835f;
     padding-top: 10px;
-    padding-bottom: 10px;   
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 nav a{
@@ -62,14 +61,6 @@ nav a{
     color: aliceblue;
     font-size: 40px;
     font-weight: 500;
-}
-
-nav li{
-    list-style-type: none;
-    float:right;
-    display: block;
-    width:33%;
-    text-align: center;
 }
 
 main{
@@ -107,7 +98,7 @@ footer{
 }
 
 #profile-img{
-    width: 375px;
+    width: 350px;
     padding: 15px;
     border-radius: 100%;
     margin:auto;
@@ -175,4 +166,41 @@ footer{
     background-color: rgba(83, 153, 50, 0.3);
     margin: 0.2rem ;
     height:2rem;
+}
+
+@media only screen and (max-width: 700px) {
+    #title{
+        width:90%;
+        color:white;
+        font-size: 40px;
+        text-align: center;
+    }
+    nav a{
+        font-size: 30px;
+        font-weight: 300;
+    }
+    .profile_card{
+        width: 250px;
+        margin: 10px auto;
+        padding: 8px;
+        border: 3px double white;
+        text-align: center;
+        background-color: rgba(128, 128, 128, 0.3);
+    }
+    
+    #profile-img{
+        width: 200px;
+        padding: 15px;
+        border-radius: 100%;
+        margin:auto;
+    }
+    .submit{
+        width: 100%;
+    }
+    .contact-form{
+        grid-template-columns: 1fr;
+    }
+    .contact-form input{
+        width: 90%;
+    }
 }
